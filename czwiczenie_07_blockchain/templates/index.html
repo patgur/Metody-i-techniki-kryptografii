@@ -1,0 +1,56 @@
+<doctype html!>
+<html>
+<head>
+    <title>Cryptowaluta</title>
+    <!--link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}"/-->
+    <style>
+        body{
+            background-color: rgb(59,59,59);
+            color: white;
+        }
+        #container{
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            
+        }
+        #content{
+            height:10%;
+            width:30%;
+            margin-right: auto;
+            margin-left: auto;
+            border: 2px solid #AAA;
+            padding: 10px;
+            padding-top: 20px;
+        }
+        .button{
+            background-color: rgb(185, 157, 0);
+            text-decoration: none;
+            color: black;
+            border: 1px black solid;
+            border-radius: 6px;
+            border-spacing: 15px;
+            border-collapse: separate;
+            padding: 3px;
+
+        }
+        .button:hover{
+            background-color: rgb(221, 188, 0);
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <form method="get" action="/mine">
+                <button type="submit" class="button">Wykop kolejny blok</button>
+            </form>
+            
+            <a href="/chain" class="button" target="_blank">Sprawdź wykopane bloki</a>
+        </div>
+    </div>
+    
+</body>
+</html>
